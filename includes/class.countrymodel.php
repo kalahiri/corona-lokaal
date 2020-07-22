@@ -10,7 +10,10 @@
  */
 class CountryModel extends BaseModel {
 
+    private $seriesSortedByDate;
+    private $totalsSortedByDate;
     
+
     /**
      * Constructor
      */
@@ -19,47 +22,19 @@ class CountryModel extends BaseModel {
     }
 
 
-    public function getData( $ajax = true ) {
-        $data = $this->getTotals();
-    }
-
-
     /**
      * Get the data for the whole country.
      */
-    public function getTotals( $ajax= true ) {
-        $series = FileManager::readSeries( FileManager::COUNTRY );
+    public function getChartData( $ajax= true ) {
+        if ( empty( $this->totalsSortedByDate ) ) {
+            $this->getTotalsSortedByDate();
+        }
 
-        // get the totals per day
-        $totals = array_reduce( $series, function( $accumulator, $item ) { 
-            if ( ! isset( $accumulator ) || ! is_array( $accumulator ) ) $accumulator = array();
-            if ( isset( $accumulator[ $item[0] ] ) && isset( $accumulator[ $item[0] ]["reported"] ) ) {
-                $accumulator[ $item[0] ]["reported"] += $item[2];
-                $accumulator[ $item[0] ]["hospitalized"] += $item[3];
-                $accumulator[ $item[0] ]["deceased"] += $item[4];
-            } else {
-                $accumulator[ $item[0] ]["reported"] = $item[2];
-                $accumulator[ $item[0] ]["hospitalized"] = $item[3];
-                $accumulator[ $item[0] ]["deceased"] = $item[4];
-            }
-            return $accumulator;
-        });
+        $labels = $this->prepareLabels( array_keys( $this->totalsSortedByDate ) );
 
-
-
-        // TODO: CREATE CACHE FILE FOR TOTALS
-
-
-
-
-
-
-
-       $labels = $this->prepareLabels( array_keys( $totals ) );
-
-       $reported = $this->prepareDataSerie( array_column( $totals, 'reported' ));
-       $hospitalized = $this->prepareDataSerie( array_column( $totals, 'hospitalized' ));
-       $deceased = $this->prepareDataSerie( array_column( $totals, 'deceased' ));
+        $reported = $this->prepareDataSerie( array_column( $this->totalsSortedByDate, FileManager::HEADER_REPORTED ));
+        $hospitalized = $this->prepareDataSerie( array_column( $this->totalsSortedByDate, FileManager::HEADER_HOSPITALIZED ));
+        $deceased = $this->prepareDataSerie( array_column( $this->totalsSortedByDate, FileManager::HEADER_DECEASED ));
 
         if ( $ajax ) {
             $ajaxResponse = new AjaxResponse();
@@ -73,11 +48,56 @@ class CountryModel extends BaseModel {
 
 
     /**
-     * Get the weekly highest growth
+     * Get the growth numbers of today
      */
-    public function getWeekData() {
+    public function getToday() {
+        if ( empty( $this->totalsSortedByDate ) ) {
+            $this->getTotalsSortedByDate();
+        }
+        $today = end( $this->totalsSortedByDate );
+        $yesterday = prev( $this->totalsSortedByDate );
+        
+        $increase["reported"] = $today["reported"] - $yesterday["reported"];
+        $increase["hospitalized"] = $today["hospitalized"] - $yesterday["hospitalized"];
+        $increase["deceased"] = $today["deceased"] - $yesterday["deceased"];
+
+        return $increase;
+
+
+
 
     }
+
+
+    private function getTotalsSortedByDate() {
+        if( FileManager::isCacheAvailable( FileManager::TOTALS_BY_DATE_CACHE_FILE ) ) {
+            $this->totalsSortedByDate = FileManager::readFromCache( 'totals', FileManager::TOTALS_BY_DATE_CACHE_FILE );
+        } else {
+            if ( empty( $this->seriesSortedOnDate ) ) {
+                $this->seriesSortedOnDate = FileManager::readSeries( FileManager::SERIES_SORTED_BY_DATE );
+            }
+
+            // get the totals per day
+            $this->totalsSortedByDate = array_reduce( $this->seriesSortedOnDate, function( $accumulator, $item ) { 
+                if ( ! isset( $accumulator ) || ! is_array( $accumulator ) ) $accumulator = array();
+                if ( isset( $accumulator[ $item[ FileManager::HEADER_DATE ] ] ) 
+                                && isset( $accumulator[ $item[ FileManager::HEADER_DATE ] ]["reported"] ) ) {
+                    $accumulator[ $item[FileManager::HEADER_DATE] ][FileManager::HEADER_REPORTED] += $item[FileManager::HEADER_REPORTED];
+                    $accumulator[ $item[FileManager::HEADER_DATE] ][FileManager::HEADER_HOSPITALIZED] += $item[FileManager::HEADER_HOSPITALIZED];
+                    $accumulator[ $item[FileManager::HEADER_DATE] ][FileManager::HEADER_DECEASED] += $item[FileManager::HEADER_DECEASED];
+                } else {
+                    $accumulator[ $item[FileManager::HEADER_DATE] ][FileManager::HEADER_REPORTED] = $item[FileManager::HEADER_REPORTED];
+                    $accumulator[ $item[FileManager::HEADER_DATE] ][FileManager::HEADER_HOSPITALIZED] = $item[FileManager::HEADER_HOSPITALIZED];
+                    $accumulator[ $item[FileManager::HEADER_DATE] ][FileManager::HEADER_DECEASED] = $item[FileManager::HEADER_DECEASED];
+                }
+                return $accumulator;
+            });
+
+            FileManager::saveToCache( 'totals', $this->totalsSortedByDate, FileManager::TOTALS_BY_DATE_CACHE_FILE );
+        }
+        return true;
+    }
+
 
 
 

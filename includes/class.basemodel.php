@@ -33,13 +33,13 @@ class BaseModel {
 
 
     /**
-     * change the cumulative values to daily add values
-     * format the data to be used by chart.js
+     * Change the cumulative values to daily growth values.
+     * Format the data to be used by chart.js
      */
     protected function prepareDataSerie( $dataset ) {
         // NOTICE: the RIVM dataset for 20/03 is probably corrupt. 
         // So set it to the value of next day to remove strange effect in graph
-        $dataset[7] = $dataset[8];
+        //$dataset[7] = $dataset[8];
 
         // create an array with values of the precious day so we can substract those values from today
         $dataset_next_day = $dataset;
