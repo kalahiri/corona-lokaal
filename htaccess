@@ -1,0 +1,56 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+## ALLEEN VOOR DE LIVE-OMGEVING, NIET VOOR DE ONTWIKKEL-OMGEVING ##
+## Alles wordt doorverwezen van HTTP naar HTTPS
+RewriteCond %{SERVER_PORT} !^443$ 
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+## Alles wordt doorverwezen van HTTPS naar HTTP
+# RewriteCond %{SERVER_PORT} ^443$ 
+# RewriteCond %{HTTPS} on
+# RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+
+## ALLEEN VOOR DE LIVE-OMGEVING, NIET VOOR DE ONTWIKKEL-OMGEVING ##
+## Forceer altijd "www."
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+
+
+
+# Herschrijf de mooie url's
+RewriteRule ^location/(.*) index.php?location=$1 [L]
+
+
+
+## Deze is nodig voor de file-fingerprinting
+# RewriteRule ^(.*)\.[\d]{10}\.(css|js|ico|png|jpg|jpeg|svg|gif)$ $1.$2 [L]
+
+## voorkom deeplinking van bepaalde directory's. Niet handig voor delen op social media.
+# RewriteCond   %{HTTP_REFERER} !^$
+# RewriteCond   %{HTTP_REFERER} !^https://(www\.)?privacybarometer\.nl/  [NC]
+# RewriteRule   ^images(.*)  404.shtml
+
+## Blokkeer specifieke IP adressen
+## De merkwaardige opbouw met <Files..></Files> en dan deny is nodig om een eindeloze loop te voorkomen.
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+## Meestal standaard al ingesteld, maar is goed voor laadsnelheid.
+<ifModule mod_headers.c>
+    Header set Connection keep-alive
+</ifModule>
+
+## Geef de caching periode per bestandstype.
+## Voor de bestanden met time-stamp fingerprinting kunnen we oneindig cachen.
+
+
+
+
