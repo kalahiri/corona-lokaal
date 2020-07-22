@@ -250,7 +250,7 @@ window.onload = function() {
 
         // Send the AJAX-request and handle the response.
         $.post( ajaxUrl, params ).then( function( response ) {
-            // console.log("Data Loaded: " + response );
+            console.log("Data Loaded: " + response );
             rivmCharts.response = JSON.parse( response );
             if ( rivmCharts.response.success ) {
                 switch ( action ) {
@@ -258,9 +258,10 @@ window.onload = function() {
                         zoomIn = false;
                         redrawCharts( zoomIn );
                         if ( rivmCharts.response.data.city ) {
-                        title.innerHTML = rivmCharts.response.data.city + " - bijgewerkt tot en met " 
+                            title.innerHTML = rivmCharts.response.data.city + " - bijgewerkt tot en met " 
                                         + rivmCharts.response.data.chartLabels[ rivmCharts.response.data.chartLabels.length - 1 ] 
                                         + " op basis van cijfers RIVM.";
+                            selectLocation.value = rivmCharts.response.data.city;
                         }
                         if ( rivmCharts.response.data.country ) {
                             selectLocation.value = 'Nederland';
@@ -306,6 +307,8 @@ window.onload = function() {
         }
         return avg;
     }
+
+
 
 
 }( window.rivmCharts = window.rivmCharts || {}, window.jQuery ) );

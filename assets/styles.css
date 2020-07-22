@@ -1,9 +1,37 @@
 body { font-family: arial; font-size: 100%  }
+
+input[type="button"],input[type="submit"] {
+    color:#fff;
+	margin:0.3em 1%;
+	padding:0 1em 0.1em 1em;
+	border:2px solid #333;
+	border-radius:5px;
+	height:2.2em;
+	line-height:1.9em;
+	text-align:center;
+	cursor:pointer;
+	background-color:#24638d;
+    opacity:0.8;
+    -webkit-transition:background 0.3s,  color 0.3s,  opacity 0.3s;
+    transition:background 0.3s, color 0.3s, opacity 0.3s;
+}
+input[type="button"]:hover,input[type="submit"]:hover {
+    color:#333;
+    background-color:#fff;
+    text-decoration:none;
+    opacity:1;
+    -webkit-transition:background 0.3s, color 0.3s, opacity 0.3s;
+    transition:background 0.3s, color 0.3s, opacity 0.3s
+}
+
+.click{ cursor:pointer }
+a { color:#0484ab  }
+
 p,ul { font-family: arial; font-size: 90% }
 .notice { margin-bottom:0.1em }
 ul { margin-top:0;padding-left:1.1em }
 
-#main-container { margin:1em 4em }
+#main-container { margin:0;box-sizing:border-box;padding:1em 4em; width:100% }
 canvas {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -11,13 +39,13 @@ canvas {
 }
 .canvas-container {
     border:1px solid #eee;
-    width:45%;
+    width:47%;
     float:left;
     margin:0.5em;
     position:relative;
 }
 .canvas-container .zoom { position:absolute;top:0.5em;right:1em;z-index:99;cursor:pointer; color:#666 }
-.info-container { border:0;width:35%;padding:1em 0 4em 1em }
+.info-container { border:0;width:35%;padding:0.5em 0 4em 1em }
 
 .fa-solid { font-family:'Font Awesome Solid' }
 .fa-brands { font-family:'Font Awesome Brands' }
@@ -25,9 +53,11 @@ canvas {
 div.location-title { margin:0.4em 0 0.6em 0;float:left }
 select#selectLocation { margin-right:2em }
 
-#heading { width:100%;border-bottom:1px solid #000 }
+#heading { position:relative;width:100%;border-bottom:1px solid #000 }
 #heading img { display:inline-block;height:2em;width:auto;vertical-align:middle }
+#heading div#about { cursor:pointer;position:absolute;top:0.5em;right:1em }
 h1 {
+    width:80%;
     display:inline-block;
     vertical-align:middle;
     font-size:1.5em;
@@ -37,16 +67,44 @@ h1 {
 
 div#share-container a { text-decoration:none;margin:0 0.3em;padding:0;color:#0484ab }
 
+.popup { 
+    position:absolute;top:2em;right:2em;z-index:999;
+    border:2px solid #0484ab;
+    border-radius:12px;
+    overflow:auto;
+    text-align:left;
+    box-shadow: 10px 10px 15px #777;
+    box-sizing:content-box;
+    width:400px;
+    max-width:100%;
+    background-color:#fff;
+
+}
+.popup .close { margin:0.5em; position:absolute;top:0;right:0.5em;z-index:199;cursor:pointer }
+.popup-contents { 
+    box-sizing:content-box;
+    color:#333;text-align:left;margin:10% 0 0 0;padding:1em 2em;z-index:98 
+}
+.popup .popup-close-button { width:100%;text-align:center;margin:0 0 2em 0 }
+#popupAbout { display:none }
+
+.float-left { float:left }
+.float-right { float:right }
+.today { margin-top:0 }
+
 /* responsive */
-@media only screen and (max-width:1100px) {
-    #main-container { margin:1em 1em }
+@media only screen and (max-width:1000px) {
+    #main-container { padding:1em 0.5em }
 }
 @media only screen and (max-width:800px) {
-    .canvas-container { width:100% }
+    .canvas-container { width:95% }
 }
 @media only screen and (max-width:600px) {
     body { font-size: 90% }
+    .popup { width:250px }
 }
 @media only screen and (max-width:500px) {
     body {  font-size: 80%  }
+    .canvas-container .zoom { position:absolute;top:-1em;right:0;font-size:150% }
 }
+
