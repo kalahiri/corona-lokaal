@@ -6,7 +6,7 @@
  * 
  */
 
-const BASE_URL = "https://www.corona-lokaal.nl/";
+const BASE_URL = "http://localhost/rivm-charts/";
 const SITE_NAME = "Corona Lokaal";
 const DOMAIN_TITLE = SITE_NAME . " - Actuele corona trends en updates per plaats | ";
 

@@ -26,7 +26,7 @@ require_once( "autoloader.php" );
                         if ( isset( $_POST["value"] ) && ! empty( $_POST["value"] ) ) {
                             if ( $_POST["value"] == 'Nederland' ) {
                             $countryModel = new countryModel();
-                            $countryModel->getData();
+                            $countryModel->getChartData();
                             } else {
                             $cityModel = new cityModel();
                             $cityModel->getChartData( $_POST["value"] );
@@ -37,18 +37,6 @@ require_once( "autoloader.php" );
                         generalError();
                 }
                 break;
-                /* DEPRECATED
-                case "country":
-                $countryModel = new countryModel();
-                switch ( $_POST["action"] ) {
-                    case "get": 
-                        $countryModel->getData();
-                        break;
-                    default:
-                        generalError();
-                }
-                break;
-                */
                 default:
                     $this->generalError( 'ERROR: arrived at default in AjaxController with category: ' . $_POST["category"] );
         }
