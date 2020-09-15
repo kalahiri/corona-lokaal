@@ -3,9 +3,9 @@ RewriteEngine on
 
 ## ALLEEN VOOR DE LIVE-OMGEVING, NIET VOOR DE ONTWIKKEL-OMGEVING ##
 ## Alles wordt doorverwezen van HTTP naar HTTPS
-# RewriteCond %{SERVER_PORT} !^443$ 
-# RewriteCond %{HTTPS} !on
-# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{SERVER_PORT} !^443$ 
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 ## Alles wordt doorverwezen van HTTPS naar HTTP
 # RewriteCond %{SERVER_PORT} ^443$ 
@@ -15,10 +15,12 @@ RewriteEngine on
 
 
 ## ALLEEN VOOR DE LIVE-OMGEVING, NIET VOOR DE ONTWIKKEL-OMGEVING ##
-# Forceer altijd "www."
-# RewriteCond %{HTTP_HOST} !^$
-# RewriteCond %{HTTP_HOST} !^www\.
-# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+## Forceer altijd "www."
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+
 
 
 # Herschrijf de mooie url's
@@ -26,7 +28,8 @@ RewriteRule ^location/(.*)/plant/(.*) index.php?location=$1&plant=$2 [L]
 RewriteRule ^location/(.*) index.php?location=$1 [L]
 
 
-## Deze is nodig voor de file-fingerprinting
+
+## Deze is nodig voor de oude manier van file-fingerprinting
 RewriteRule ^(.*)\.[\d]{10}\.(css|js|ico|png|jpg|jpeg|svg|gif)$ $1.$2 [L]
 
 ## voorkom deeplinking van bepaalde directory's. Niet handig voor delen op social media.
@@ -61,5 +64,4 @@ ExpiresByType text/x-javascript "access plus 3 month"
 ExpiresByType image/x-icon "access plus 3 month"
 ExpiresDefault "access plus 30 minutes"
 </IfModule>
-
 

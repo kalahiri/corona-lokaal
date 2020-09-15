@@ -8,5 +8,4 @@
 
 const BASE_URL = "https://www.corona-lokaal.nl/";
 const SITE_NAME = "Corona Lokaal";
-const DOMAIN_TITLE = SITE_NAME . " - Actuele corona trends en updates per plaats | ";
-
+const DOMAIN_TITLE = SITE_NAME . " - Actuele informatie over verspreiding van het coronavirus per gemeente | ";
