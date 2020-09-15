@@ -10,4 +10,6 @@ Includes:
 
 All data is automatically updated when updates are available at the national health institute RIVM.
 
+Website: https://www.corona-lokaal.nl
+
 Notice: Before using this package, change filename of htaccess to .htaccess
