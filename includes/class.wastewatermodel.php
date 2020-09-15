@@ -6,7 +6,7 @@
  */
 
 /**
- * Handle the selection of city
+ * Handle the data for the waste water plants
  */
 class WastewaterModel {
     private $rawSeriesWasteWater;
