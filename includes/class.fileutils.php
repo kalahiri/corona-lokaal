@@ -8,6 +8,20 @@
 
 class FileUtils {
     const COOKIE_PATH = "data/cookies/";
+
+
+   /**
+     * Use last modification timestamp of a file as a file fingerprint.
+     * This can be used to reload only files that have been changed and cache 
+     * the unchanged files on the users system. 
+     */
+    static public function addTimeStamp( $file ) {
+        if ( ! file_exists( $file ) ) return $file;
+        $mTime = filemtime( $file );
+        $pathinfo = pathinfo( $file ); 
+        return $pathinfo["dirname"] . '/' . $pathinfo["filename"] . '.' . $mTime  . '.' . $pathinfo["extension"];
+    }
+
  
     /**
      * Places a server cookie. Existing cookie with same name is overwritten.
@@ -40,8 +54,6 @@ class FileUtils {
         return false;
     }
 
-    
-    
     
     
     
