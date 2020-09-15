@@ -1,1 +1,13 @@
 Local corona trends and updates in The Netherlands
+Includes:
+- Map of the Netherlands displaying the spread of the virus in each municipality
+- Map of the Netherlands displaying the waste water plants and their measurements of the virus RNA in the waste water
+- Chart of positive tested persons per day per municipality or for the whole country of The Netherlands
+- Chart of hospital admissions for positive tested persons per day per municipality or for the whole country of The Netherlands
+- Chart of reported deceased per municipality or for the whole country of The Netherlands
+- top 10 municipalities with highest number of cases per 100.000 inhabitants
+- some daily key figures for the country.
+
+All data is automatically updated when updates are available at the national health institute RIVM.
+
+Notice: Before using this package, change filename of htaccess to .htaccess
