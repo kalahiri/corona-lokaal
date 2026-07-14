@@ -29,7 +29,7 @@ class Statistics {
     public static function addVisitor() {
         $now = time();
         $today = date( 'Ymd', time() );
-        $ip = ( ! empty( $_SERVER['REMOTE_ADDR'] ) ) ? md5( $_SERVER['REMOTE_ADDR'] ) : 'empty:ip:address';
+        $ip = ( ! empty( $_SERVER['REMOTE_ADDR'] ) ) ? $_SERVER['REMOTE_ADDR'] : 'empty:ip:address';
             file_put_contents ( self::RAW_FILE_VISITORS . $today . '.php' ,  $now . ';' . $ip . PHP_EOL, FILE_APPEND | LOCK_EX );
     }
 

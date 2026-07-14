@@ -1,0 +1,345 @@
+﻿Municipality_code;Municipality_name;Inhabitants
+14;Groningen;233273
+34;Almere;214715
+37;Stadskanaal;31754
+47;Veendam;27417
+50;Zeewolde;22879
+59;Achtkarspelen;27900
+60;Ameland;3746
+72;Harlingen;15807
+74;Heerenveen;50650
+80;Leeuwarden;124481
+85;Ooststellingwerf;25464
+86;Opsterland;29812
+88;Schiermonnikoog;931
+90;Smallingerland;56040
+93;Terschelling;4870
+96;Vlieland;1194
+98;Weststellingwerf;26130
+106;Assen;68836
+109;Coevorden;35317
+114;Emmen;107024
+118;Hoogeveen;55603
+119;Meppel;34386
+141;Almelo;73132
+147;Borne;23668
+148;Dalfsen;28901
+150;Deventer;101236
+153;Enschede;159732
+158;Haaksbergen;24229
+160;Hardenberg;61357
+163;Hellendoorn;35932
+164;Hengelo;81049
+166;Kampen;54474
+168;Losser;22888
+171;Noordoostpolder;47583
+173;Oldenzaal;31701
+175;Ommen;18295
+177;Raalte;37911
+180;Staphorst;17261
+183;Tubbergen;21315
+184;Urk;21227
+189;Wierden;24538
+193;Zwolle;129840
+197;Aalten;27120
+200;Apeldoorn;164781
+202;Arnhem;162424
+203;Barneveld;59992
+209;Beuningen;26157
+213;Brummen;20884
+214;Buren;27009
+216;Culemborg;29121
+221;Doesburg;11064
+222;Doetinchem;58270
+225;Druten;18991
+226;Duiven;25066
+228;Ede;118530
+230;Elburg;23429
+232;Epe;33198
+233;Ermelo;27016
+243;Harderwijk;48726
+244;Hattem;12228
+246;Heerde;18776
+252;Heumen;16569
+262;Lochem;33948
+263;Maasdriel;25452
+267;Nijkerk;43600
+268;Nijmegen;177359
+269;Oldebroek;23760
+273;Putten;24365
+274;Renkum;31417
+275;Rheden;43525
+277;Rozendaal;1726
+279;Scherpenzeel;10128
+281;Tiel;41920
+285;Voorst;24790
+289;Wageningen;39635
+293;Westervoort;15014
+294;Winterswijk;29022
+296;Wijchen;41261
+297;Zaltbommel;29447
+299;Zevenaar;44096
+301;Zutphen;48111
+302;Nunspeet;28021
+303;Dronten;42011
+307;Amersfoort;157462
+308;Baarn;24792
+310;De Bilt;43384
+312;Bunnik;15341
+313;Bunschoten;22019
+317;Eemnes;9362
+321;Houten;50223
+327;Leusden;30544
+331;Lopik;14456
+335;Montfoort;13896
+339;Renswoude;5556
+340;Rhenen;20203
+342;Soest;46906
+344;Utrecht;359370
+345;Veenendaal;66912
+351;Woudenberg;13639
+352;Wijk bij Duurstede;23925
+353;IJsselstein;33819
+355;Zeist;65043
+356;Nieuwegein;63866
+358;Aalsmeer;31991
+361;Alkmaar;109896
+362;Amstelveen;90829
+363;Amsterdam;893783
+373;Bergen (NH.);29715
+375;Beverwijk;41863
+376;Blaricum;11954
+377;Bloemendaal;23478
+383;Castricum;36086
+384;Diemen;31334
+385;Edam-Volendam;36268
+388;Enkhuizen;18637
+392;Haarlem;162543
+394;Haarlemmermeer;157789
+396;Heemskerk;39191
+397;Heemstede;27545
+399;Heiloo;24144
+400;Den Helder;56582
+402;Hilversum;91235
+405;Hoorn;73619
+406;Huizen;41090
+415;Landsmeer;11565
+417;Laren;11398
+420;Medemblik;45165
+431;Oostzaan;9689
+432;Opmeer;12009
+437;Ouder-Amstel;14125
+439;Purmerend;91793
+441;Schagen;46532
+448;Texel;13656
+450;Uitgeest;13632
+451;Uithoorn;30206
+453;Velsen;68617
+473;Zandvoort;17168
+479;Zaanstad;156901
+482;Alblasserdam;20136
+484;Alphen aan den Rijn;112587
+489;Barendrecht;48643
+498;Drechterland;19838
+501;Brielle;17439
+502;Capelle aan den IJssel;67319
+503;Delft;103581
+505;Dordrecht;119115
+512;Gorinchem;37410
+513;Gouda;73681
+518;'s-Gravenhage;548320
+523;Hardinxveld-Giessendam;18413
+530;Hellevoetsluis;40312
+531;Hendrik-Ido-Ambacht;31258
+532;Stede Broec;21743
+534;Hillegom;22197
+537;Katwijk;65995
+542;Krimpen aan den IJssel;29410
+546;Leiden;124093
+547;Leiderdorp;27377
+553;Lisse;22982
+556;Maassluis;33567
+569;Nieuwkoop;29151
+575;Noordwijk;44062
+579;Oegstgeest;25064
+589;Oudewater;10138
+590;Papendrecht;32171
+597;Ridderkerk;46671
+599;Rotterdam;651631
+603;Rijswijk;55220
+606;Schiedam;79279
+610;Sliedrecht;25597
+613;Albrandswaard;25814
+614;Westvoorne;14900
+622;Vlaardingen;73924
+626;Voorschoten;25650
+627;Waddinxveen;30479
+629;Wassenaar;26949
+632;Woerden;52694
+637;Zoetermeer;125267
+638;Zoeterwoude;8843
+642;Zwijndrecht;44775
+654;Borsele;22818
+664;Goes;38594
+668;West Maas en Waal;19581
+677;Hulst;27575
+678;Kapelle;12882
+687;Middelburg;48964
+703;Reimerswaal;22896
+715;Terneuzen;54463
+716;Tholen;26085
+717;Veere;21953
+718;Vlissingen;44358
+736;De Ronde Venen;44720
+737;Tytsjerksteradiel;32060
+743;Asten;16817
+744;Baarle-Nassau;6899
+748;Bergen op Zoom;67514
+753;Best;30216
+755;Boekel;10959
+757;Boxtel;32973
+758;Breda;184126
+762;Deurne;32437
+765;Pekela;12176
+766;Dongen;26368
+770;Eersel;19528
+772;Eindhoven;235691
+777;Etten-Leur;43869
+779;Geertruidenberg;21770
+784;Gilze en Rijen;26723
+785;Goirle;23952
+794;Helmond;92627
+796;'s-Hertogenbosch;155490
+797;Heusden;45005
+798;Hilvarenbeek;15698
+809;Loon op Zand;23504
+820;Nuenen, Gerwen en Nederwetten;23702
+823;Oirschot;18842
+824;Oisterwijk;32373
+826;Oosterhout;56206
+828;Oss;92526
+840;Rucphen;23080
+845;Sint-Michielsgestel;29498
+847;Someren;19428
+848;Son en Breugel;17552
+851;Steenbergen;24310
+852;Waterland;17312
+855;Tilburg;221947
+858;Valkenswaard;31221
+861;Veldhoven;45500
+865;Vught;31669
+866;Waalre;17544
+867;Waalwijk;48815
+873;Woensdrecht;22028
+879;Zundert;21988
+880;Wormerland;16333
+882;Landgraaf;37262
+888;Beek;15875
+889;Beesel;13450
+893;Bergen (L.);13108
+899;Brunssum;27670
+907;Gennep;17035
+917;Heerlen;86936
+928;Kerkrade;45442
+935;Maastricht;120227
+938;Meerssen;18661
+944;Mook en Middelaar;7909
+946;Nederweert;17171
+957;Roermond;58763
+965;Simpelveld;10477
+971;Stein;24875
+981;Vaals;10084
+983;Venlo;101988
+984;Venray;43713
+986;Voerendaal;12466
+988;Weert;50011
+994;Valkenburg aan de Geul;16365
+995;Lelystad;79811
+1507;Horst aan de Maas;42487
+1509;Oude IJsselstreek;39346
+1525;Teylingen;37791
+1581;Utrechtse Heuvelrug;49946
+1586;Oost Gelre;29574
+1598;Koggenland;22940
+1621;Lansingerland;63363
+1640;Leudal;36045
+1641;Maasgouw;23947
+1652;Gemert-Bakel;30760
+1655;Halderberge;30430
+1658;Heeze-Leende;16243
+1659;Laarbeek;22805
+1667;Reusel-De Mierden;13127
+1669;Roerdalen;20580
+1674;Roosendaal;77200
+1676;Schouwen-Duiveland;34065
+1680;Aa en Hunze;25399
+1681;Borger-Odoorn;25598
+1690;De Wolden;24374
+1695;Noord-Beveland;7581
+1696;Wijdemeren;24463
+1699;Noordenveld;31214
+1700;Twenterand;33699
+1701;Westerveld;19661
+1705;Lingewaard;46822
+1706;Cranendonck;21001
+1708;Steenwijkerland;44341
+1709;Moerdijk;37185
+1711;Echt-Susteren;31751
+1714;Sluis;23166
+1719;Drimmelen;27325
+1721;Bernheze;31455
+1723;Alphen-Chaam;10373
+1724;Bergeijk;18754
+1728;Bladel;20529
+1729;Gulpen-Wittem;14206
+1730;Tynaarlo;33978
+1731;Midden-Drenthe;33381
+1734;Overbetuwe;48214
+1735;Hof van Twente;35040
+1740;Neder-Betuwe;24648
+1742;Rijssen-Holten;38204
+1771;Geldrop-Mierlo;40066
+1773;Olst-Wijhe;18361
+1774;Dinkelland;26606
+1783;Westland;111382
+1842;Midden-Delfland;19414
+1859;Berkelland;43846
+1876;Bronckhorst;36087
+1883;Sittard-Geleen;91743
+1884;Kaag en Braassem;27541
+1891;Dantumadiel;18943
+1892;Zuidplas;45064
+1894;Peel en Maas;43660
+1895;Oldambt;38277
+1896;Zwartewaterland;22823
+1900;Súdwest-Fryslân;89999
+1901;Bodegraven-Reeuwijk;35278
+1903;Eijsden-Margraten;25900
+1904;Stichtse Vecht;65108
+1911;Hollands Kroon;48583
+1916;Leidschendam-Voorburg;76433
+1924;Goeree-Overflakkee;50589
+1926;Pijnacker-Nootdorp;55674
+1930;Nissewaard;85440
+1931;Krimpenerwaard;56622
+1940;De Fryske Marren;51778
+1942;Gooise Meren;58524
+1945;Berg en Dal;35010
+1948;Meierijstad;81647
+1949;Waadhoeke;46149
+1950;Westerwolde;26215
+1952;Midden-Groningen;60726
+1954;Beekdaelen;36065
+1955;Montferland;36031
+1959;Altena;56352
+1960;West Betuwe;51496
+1961;Vijfheerenlanden;57829
+1963;Hoeksche Waard;88047
+1966;Het Hogeland;47834
+1969;Westerkwartier;63678
+1970;Noardeast-Fryslân;45481
+1978;Molenlanden;44130
+1979;Eemsdelta;45587
+1980;Dijk en Waard;86722
+1982;Land van Cuijk;90194
+1991;Maashorst;58108

@@ -1,0 +1,1 @@
+[{"date":"2025-10-23","positive_tests_percentage":0.9,"groeipercentage":-0.09999999999999998},{"date":"2025-10-16","positive_tests_percentage":1}]

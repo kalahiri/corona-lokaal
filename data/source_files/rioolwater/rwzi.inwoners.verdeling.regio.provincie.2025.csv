@@ -1,0 +1,182 @@
+rwzi_code,rwzi_naam,inwoners,regio_code,regio_naam,province_code,province_name,aandeel
+1008,Stadskanaal,31846,VR01,Groningen,PV20,Groningen,1
+1010,Ter Apel,13723,VR01,Groningen,PV20,Groningen,1
+1033,Garmerwolde,241658,VR01,Groningen,PV20,Groningen,0.988
+1033,Garmerwolde,241658,VR03,Drenthe,PV22,Drenthe,0.012
+1045,Veendam,39240,VR01,Groningen,PV20,Groningen,1
+1046,Bellingwolde,6393,VR01,Groningen,PV20,Groningen,1
+2011,Leeuwarden,103020,VR02,Fryslân,PV21,Friesland,1
+2012,Drachten,67141,VR02,Fryslân,PV21,Friesland,1
+2013,Burgum,30841,VR02,Fryslân,PV21,Friesland,1
+2022,Joure,19706,VR02,Fryslân,PV21,Friesland,1
+2024,Sloten,12199,VR02,Fryslân,PV21,Friesland,1
+2029,Birdaard,21024,VR02,Fryslân,PV21,Friesland,1
+2031,Heerenveen,47931,VR02,Fryslân,PV21,Friesland,1
+2032,Harlingen,24692,VR02,Fryslân,PV21,Friesland,1
+2036,Grouw,14488,VR02,Fryslân,PV21,Friesland,1
+3010,Assen,75418,VR03,Drenthe,PV22,Drenthe,1
+3014,Meppel,53324,VR03,Drenthe,PV22,Drenthe,0.725
+3014,Meppel,53324,VR04,IJsselland,PV23,Overijssel,0.275
+3022,Emmen,108081,VR03,Drenthe,PV22,Drenthe,1
+3030,Eelde,52058,VR01,Groningen,PV20,Groningen,0.028
+3030,Eelde,52058,VR03,Drenthe,PV22,Drenthe,0.972
+3031,Gieten,31424,VR03,Drenthe,PV22,Drenthe,1
+3033,Echten,77996,VR03,Drenthe,PV22,Drenthe,0.982
+3033,Echten,77996,VR04,IJsselland,PV23,Overijssel,0.018
+4005,Genemuiden,23705,VR04,IJsselland,PV23,Overijssel,1
+4006,Olst,18493,VR04,IJsselland,PV23,Overijssel,0.998
+4006,Olst,18493,VR06,Noord- en Oost-Gelderland,PV25,Gelderland,0.002
+4019,Deventer,92600,VR04,IJsselland,PV23,Overijssel,1
+4020,Steenwijk,37260,VR03,Drenthe,PV22,Drenthe,0.001
+4020,Steenwijk,37260,VR04,IJsselland,PV23,Overijssel,0.998
+4024,Hardenberg,33408,VR04,IJsselland,PV23,Overijssel,0.998
+4024,Hardenberg,33408,VR05,Twente,PV23,Overijssel,0.002
+4026,Zwolle,123740,VR04,IJsselland,PV23,Overijssel,1
+4027,Tollebeek,69507,VR04,IJsselland,PV23,Overijssel,0
+4027,Tollebeek,69507,VR25,Flevoland,PV24,Flevoland,1
+5002,Enschede,148642,VR05,Twente,PV23,Overijssel,1
+5012,Oldenzaal,44141,VR05,Twente,PV23,Overijssel,1
+5017,Hengelo,116027,VR05,Twente,PV23,Overijssel,1
+5022,Rijssen,35979,VR05,Twente,PV23,Overijssel,1
+6003,Dronten,42271,VR25,Flevoland,PV24,Flevoland,1
+6004,Lelystad,81203,VR25,Flevoland,PV24,Flevoland,1
+6005,Almere,217792,VR25,Flevoland,PV24,Flevoland,1
+7006,Wehl,6026,VR06,Noord- en Oost-Gelderland,PV25,Gelderland,1
+7019,Zutphen,78093,VR04,IJsselland,PV23,Overijssel,0.001
+7019,Zutphen,78093,VR06,Noord- en Oost-Gelderland,PV25,Gelderland,1
+7020,Nieuwgraaf,205644,VR06,Noord- en Oost-Gelderland,PV25,Gelderland,0.082
+7020,Nieuwgraaf,205644,VR07,Gelderland-Midden,PV25,Gelderland,0.918
+7022,Etten,101332,VR06,Noord- en Oost-Gelderland,PV25,Gelderland,1
+8009,Elburg,54992,VR06,Noord- en Oost-Gelderland,PV25,Gelderland,1
+8011,Harderwijk,105685,VR06,Noord- en Oost-Gelderland,PV25,Gelderland,0.954
+8011,Harderwijk,105685,VR07,Gelderland-Midden,PV25,Gelderland,0.046
+8019,Bennekom,16164,VR07,Gelderland-Midden,PV25,Gelderland,1
+8021,Ede,157774,VR07,Gelderland-Midden,PV25,Gelderland,1
+8021,Ede,157774,VR09,Utrecht,PV26,Utrecht,0
+8022,Apeldoorn,176782,VR06,Noord- en Oost-Gelderland,PV25,Gelderland,1
+8022,Apeldoorn,176782,VR07,Gelderland-Midden,PV25,Gelderland,0
+9016,Arnhem,155255,VR07,Gelderland-Midden,PV25,Gelderland,0.856
+9016,Arnhem,155255,VR08,Gelderland-Zuid,PV25,Gelderland,0.144
+9017,Bergharen,5057,VR08,Gelderland-Zuid,PV25,Gelderland,1
+9024,Nijmegen,243215,VR08,Gelderland-Zuid,PV25,Gelderland,1
+9025,Tiel,72621,VR08,Gelderland-Zuid,PV25,Gelderland,1
+9026,Dodewaard,23654,VR07,Gelderland-Midden,PV25,Gelderland,0.292
+9026,Dodewaard,23654,VR08,Gelderland-Zuid,PV25,Gelderland,0.708
+9031,Beesd,6166,VR08,Gelderland-Zuid,PV25,Gelderland,1
+9041,Zaltbommel,54096,VR08,Gelderland-Zuid,PV25,Gelderland,1
+10001,Zeist,59753,VR09,Utrecht,PV26,Utrecht,1
+10009,Utrecht,269712,VR09,Utrecht,PV26,Utrecht,1
+10020,Woudenberg,30228,VR07,Gelderland-Midden,PV25,Gelderland,0.341
+10020,Woudenberg,30228,VR09,Utrecht,PV26,Utrecht,0.659
+10021,Veenendaal,76234,VR07,Gelderland-Midden,PV25,Gelderland,0.001
+10021,Veenendaal,76234,VR09,Utrecht,PV26,Utrecht,0.999
+10027,Amersfoort,211540,VR07,Gelderland-Midden,PV25,Gelderland,0
+10027,Amersfoort,211540,VR09,Utrecht,PV26,Utrecht,1
+10032,Oudewater,10207,VR09,Utrecht,PV26,Utrecht,0.995
+10032,Oudewater,10207,VR16,Hollands-Midden,PV28,Zuid-Holland,0.005
+10035,Rhenen,32030,VR09,Utrecht,PV26,Utrecht,1
+10036,Houten,50332,VR09,Utrecht,PV26,Utrecht,1
+11004,Hilversum,57973,VR14,Gooi en Vechtstreek,PV27,Noord-Holland,1
+11005,Amstelveen,101088,VR13,Amsterdam-Amstelland,PV27,Noord-Holland,1
+11013,Horstermeer,110047,VR09,Utrecht,PV26,Utrecht,0.007
+11013,Horstermeer,110047,VR14,Gooi en Vechtstreek,PV27,Noord-Holland,0.994
+11014,Amsterdam West,676762,VR09,Utrecht,PV26,Utrecht,0.014
+11014,Amsterdam West,676762,VR11,Zaanstreek-Waterland,PV27,Noord-Holland,0
+11014,Amsterdam West,676762,VR13,Amsterdam-Amstelland,PV27,Noord-Holland,0.986
+12012,Everstekoog,13687,VR10,Noord-Holland-Noord,PV27,Noord-Holland,1
+12013,Geestmerambacht,187159,VR10,Noord-Holland-Noord,PV27,Noord-Holland,1
+12014,Beemster,104999,VR10,Noord-Holland-Noord,PV27,Noord-Holland,0.067
+12014,Beemster,104999,VR11,Zaanstreek-Waterland,PV27,Noord-Holland,0.933
+12016,Katwoude,45416,VR11,Zaanstreek-Waterland,PV27,Noord-Holland,1
+12018,Wieringen,8472,VR10,Noord-Holland-Noord,PV27,Noord-Holland,1
+12021,Wervershoof,180902,VR10,Noord-Holland-Noord,PV27,Noord-Holland,1
+12022,Beverwijk,174828,VR10,Noord-Holland-Noord,PV27,Noord-Holland,0.137
+12022,Beverwijk,174828,VR11,Zaanstreek-Waterland,PV27,Noord-Holland,0.32
+12022,Beverwijk,174828,VR12,Kennemerland,PV27,Noord-Holland,0.542
+12026,Oosthuizen,4797,VR11,Zaanstreek-Waterland,PV27,Noord-Holland,1
+13003,Velsen,68419,VR12,Kennemerland,PV27,Noord-Holland,1
+13010,Haarlem-Waarderpolder,142026,VR12,Kennemerland,PV27,Noord-Holland,1
+13012,Haarlem-Schalkwijk,58125,VR12,Kennemerland,PV27,Noord-Holland,1
+13030,Leimuiden,5398,VR12,Kennemerland,PV27,Noord-Holland,0.144
+13030,Leimuiden,5398,VR16,Hollands-Midden,PV28,Zuid-Holland,0.856
+13033,Leiden Zuid-West,99910,VR15,Haaglanden,PV28,Zuid-Holland,0.025
+13033,Leiden Zuid-West,99910,VR16,Hollands-Midden,PV28,Zuid-Holland,0.975
+13035,Alphen-Noord,50361,VR16,Hollands-Midden,PV28,Zuid-Holland,1
+13039,Gouda,74974,VR16,Hollands-Midden,PV28,Zuid-Holland,1
+13041,Katwijk,106302,VR16,Hollands-Midden,PV28,Zuid-Holland,1
+13044,Zwaanshoek,118594,VR12,Kennemerland,PV27,Noord-Holland,0.591
+13044,Zwaanshoek,118594,VR13,Amsterdam-Amstelland,PV27,Noord-Holland,0.196
+13044,Zwaanshoek,118594,VR16,Hollands-Midden,PV28,Zuid-Holland,0.213
+13046,Leiden Noord,96583,VR16,Hollands-Midden,PV28,Zuid-Holland,1
+14003,Leidsche Rijn,109635,VR09,Utrecht,PV26,Utrecht,1
+15005,Houtrust,244964,VR15,Haaglanden,PV28,Zuid-Holland,1
+15007,De Groote Lucht,206411,VR15,Haaglanden,PV28,Zuid-Holland,0.091
+15007,De Groote Lucht,206411,VR17,Rotterdam-Rijnmond,PV28,Zuid-Holland,0.91
+15008,Harnaschpolder,843483,VR15,Haaglanden,PV28,Zuid-Holland,0.956
+15008,Harnaschpolder,843483,VR16,Hollands-Midden,PV28,Zuid-Holland,0.004
+15008,Harnaschpolder,843483,VR17,Rotterdam-Rijnmond,PV28,Zuid-Holland,0.039
+16009,Kortenoord,76930,VR16,Hollands-Midden,PV28,Zuid-Holland,0.679
+16009,Kortenoord,76930,VR17,Rotterdam-Rijnmond,PV28,Zuid-Holland,0.321
+16010,Kralingseveer,269505,VR17,Rotterdam-Rijnmond,PV28,Zuid-Holland,1
+17016,Alblasserdam,34299,VR18,Zuid-Holland-Zuid,PV28,Zuid-Holland,1
+17026,Hardinxveld-Giessendam,13521,VR18,Zuid-Holland-Zuid,PV28,Zuid-Holland,1
+17041,Hellevoetsluis,65119,VR17,Rotterdam-Rijnmond,PV28,Zuid-Holland,0.972
+17041,Hellevoetsluis,65119,VR18,Zuid-Holland-Zuid,PV28,Zuid-Holland,0.028
+17044,Dordrecht,119331,VR18,Zuid-Holland-Zuid,PV28,Zuid-Holland,1
+17052,Sliedrecht,34190,VR18,Zuid-Holland-Zuid,PV28,Zuid-Holland,1
+17053,De Groote Zaag,49564,VR16,Hollands-Midden,PV28,Zuid-Holland,0.407
+17053,De Groote Zaag,49564,VR17,Rotterdam-Rijnmond,PV28,Zuid-Holland,0.593
+17061,Dokhaven,335577,VR17,Rotterdam-Rijnmond,PV28,Zuid-Holland,1
+17063,Leerdam,20011,VR09,Utrecht,PV26,Utrecht,1
+17065,Groot-Ammers,28239,VR09,Utrecht,PV26,Utrecht,0.146
+17065,Groot-Ammers,28239,VR16,Hollands-Midden,PV28,Zuid-Holland,0.474
+17065,Groot-Ammers,28239,VR18,Zuid-Holland-Zuid,PV28,Zuid-Holland,0.38
+17066,Numansdorp,17176,VR18,Zuid-Holland-Zuid,PV28,Zuid-Holland,1
+17074,Den Bommel,3000,VR17,Rotterdam-Rijnmond,PV28,Zuid-Holland,1
+17078,Zwijndrecht,115631,VR17,Rotterdam-Rijnmond,PV28,Zuid-Holland,0.167
+17078,Zwijndrecht,115631,VR18,Zuid-Holland-Zuid,PV28,Zuid-Holland,0.833
+18006,Westerschouwen,7920,VR19,Zeeland,PV29,Zeeland,1
+18009,De Verseput,16474,VR19,Zeeland,PV29,Zeeland,1
+19001,Sint Maartensdijk,15444,VR19,Zeeland,PV29,Zeeland,1
+19003,Tholen,10919,VR19,Zeeland,PV29,Zeeland,1
+20009,Waarde,21166,VR19,Zeeland,PV29,Zeeland,1
+20011,Willem Annapolder,76475,VR19,Zeeland,PV29,Zeeland,1
+21001,Walcheren,115631,VR19,Zeeland,PV29,Zeeland,1
+22008,Retranchement,3628,VR19,Zeeland,PV29,Zeeland,1
+22012,Oostburg,10816,VR19,Zeeland,PV29,Zeeland,1
+22013,Breskens,10253,VR19,Zeeland,PV29,Zeeland,1
+23002,Terneuzen,52943,VR19,Zeeland,PV29,Zeeland,1
+24001,Hulst,19965,VR19,Zeeland,PV29,Zeeland,1
+24002,Kloosterzande,7562,VR19,Zeeland,PV29,Zeeland,1
+25001,Rijen,52681,VR20,Midden- en West-Brabant,PV30,Noord-Brabant,1
+25008,Ossendrecht,5705,VR19,Zeeland,PV29,Zeeland,0.015
+25008,Ossendrecht,5705,VR20,Midden- en West-Brabant,PV30,Noord-Brabant,0.985
+25013,Riel,7286,VR20,Midden- en West-Brabant,PV30,Noord-Brabant,1
+25017,Nieuwveer,265490,VR20,Midden- en West-Brabant,PV30,Noord-Brabant,1
+25021,Bath,248264,VR20,Midden- en West-Brabant,PV30,Noord-Brabant,1
+25026,Baarle-Nassau,6381,VR20,Midden- en West-Brabant,PV30,Noord-Brabant,1
+26005,Sleeuwijk,57008,VR20,Midden- en West-Brabant,PV30,Noord-Brabant,1
+27003,Eindhoven,467169,VR21,Brabant-Noord,PV30,Noord-Brabant,0
+27003,Eindhoven,467169,VR22,Brabant-Zuidoost,PV30,Noord-Brabant,1
+27006,Soerendonk,21087,VR22,Brabant-Zuidoost,PV30,Noord-Brabant,1
+27008,'s Hertogenbosch,177471,VR20,Midden- en West-Brabant,PV30,Noord-Brabant,0
+27008,'s Hertogenbosch,177471,VR21,Brabant-Noord,PV30,Noord-Brabant,1
+28003,Aarle-Rixtel,173624,VR21,Brabant-Noord,PV30,Noord-Brabant,0.004
+28003,Aarle-Rixtel,173624,VR22,Brabant-Zuidoost,PV30,Noord-Brabant,0.996
+28005,Dinther,125190,VR21,Brabant-Noord,PV30,Noord-Brabant,1
+29002,Oijen,162103,VR21,Brabant-Noord,PV30,Noord-Brabant,1
+30003,Limmel,78319,VR24,Limburg-Zuid,PV31,Limburg,1
+30007,Bosscherveld,60034,VR24,Limburg-Zuid,PV31,Limburg,1
+30015,Hoensbroek,178875,VR24,Limburg-Zuid,PV31,Limburg,1
+30016,Heugem,45475,VR24,Limburg-Zuid,PV31,Limburg,1
+30017,Venlo,190344,VR23,Limburg-Noord,PV31,Limburg,1
+30018,Meijel,6227,VR23,Limburg-Noord,PV31,Limburg,1
+30020,Venray,53860,VR23,Limburg-Noord,PV31,Limburg,1
+30022,Susteren,128849,VR23,Limburg-Noord,PV31,Limburg,0.266
+30022,Susteren,128849,VR24,Limburg-Zuid,PV31,Limburg,0.734
+30024,Roermond,118819,VR23,Limburg-Noord,PV31,Limburg,1
+31005,Westpoort,313928,VR11,Zaanstreek-Waterland,PV27,Noord-Holland,0.196
+31005,Westpoort,313928,VR12,Kennemerland,PV27,Noord-Holland,0.001
+31005,Westpoort,313928,VR13,Amsterdam-Amstelland,PV27,Noord-Holland,0.803
+32002,Tilburg,226629,VR20,Midden- en West-Brabant,PV30,Noord-Brabant,1
+32002,Tilburg,226629,VR21,Brabant-Noord,PV30,Noord-Brabant,0

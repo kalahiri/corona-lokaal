@@ -20,12 +20,22 @@ RewriteCond %{HTTP_HOST} !^$
 RewriteCond %{HTTP_HOST} !^www\.
 RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
 
-
-
+# doorverwijzing
+RewriteRule ^location/Nederland/plant/(.*) https://www.corona-lokaal.nl/locatie/Nederland/waterzuivering/$1 [R=301,L]
+RewriteRule ^location/(.*)/plant/(.*) https://www.corona-lokaal.nl/gemeente/$1/waterzuivering/$2 [R=301,L]
+RewriteRule ^locatie/Nederland/plant/(.*) https://www.corona-lokaal.nl/locatie/Nederland/waterzuivering/$1 [R=301,L]
+RewriteRule ^locatie/(.*)/plant/(.*) https://www.corona-lokaal.nl/gemeente/$1/waterzuivering/$2 [R=301,L]
+RewriteRule ^location/Nederland https://www.corona-lokaal.nl/locatie/Nederland [R=301,L]
+RewriteRule ^location/(.*) https://www.corona-lokaal.nl/gemeente/$1 [R=301,L]
 
 # Herschrijf de mooie url's
-RewriteRule ^location/(.*)/plant/(.*) index.php?location=$1&plant=$2 [L]
-RewriteRule ^location/(.*) index.php?location=$1 [L]
+RewriteRule ^locatie/(.*)/waterzuivering/(.*) index.php?location=$1&plant=$2 [L]
+RewriteRule ^gemeente/(.*)/waterzuivering/(.*) index.php?location=$1&plant=$2 [L]
+RewriteRule ^locatie/(.*) index.php?location=$1 [L]
+RewriteRule ^gemeente/(.*) index.php?location=$1 [L]
+RewriteRule ^csv/location/(.*) getcsv.php?location=$1 [L]
+RewriteRule ^csv/(.*) getcsv.php [L]
+RewriteRule ^downloadcsv/(.*) downloadcsv.php [L]
 
 
 
@@ -40,9 +50,13 @@ RewriteRule ^(.*)\.[\d]{10}\.(css|js|ico|png|jpg|jpeg|svg|gif)$ $1.$2 [L]
 ## Blokkeer specifieke IP adressen
 ## De merkwaardige opbouw met <Files..></Files> en dan deny is nodig om een eindeloze loop te voorkomen.
 <Files 403.shtml>
-order allow,deny
+order deny,allow
+deny from 192.33.238.48 192.33.238.52
 allow from all
 </Files>
+
+
+
 
 ## Meestal standaard al ingesteld, maar is goed voor laadsnelheid.
 <ifModule mod_headers.c>
